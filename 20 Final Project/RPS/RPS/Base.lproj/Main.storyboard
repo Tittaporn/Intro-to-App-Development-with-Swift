@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="4Id-nn-Ubd">
+                                <rect key="frame" x="44.5" y="240.5" width="325" height="415.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2p-Xw-S4M">
+                                        <rect key="frame" x="122.5" y="0.0" width="80" height="105.5"/>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock, Paper, Scissors" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc4-sy-Dhx">
+                                        <rect key="frame" x="0.0" y="147.5" width="325" height="32"/>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="VmG-S6-qF0">
+                                        <rect key="frame" x="0.0" y="221.5" width="325" height="108"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5J-u6-fmH">
+                                                <rect key="frame" x="0.0" y="0.0" width="108.5" height="108"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                <state key="normal" title="👊"/>
+                                                <connections>
+                                                    <action selector="playRockTappedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UsP-A4-ULp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfU-p7-V2R">
+                                                <rect key="frame" x="108.5" y="0.0" width="108" height="108"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                <state key="normal" title="🖐"/>
+                                                <connections>
+                                                    <action selector="playPaperTappedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jBT-rD-jt0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11i-MC-zQ3">
+                                                <rect key="frame" x="216.5" y="0.0" width="108.5" height="108"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                <state key="normal" title="✌️"/>
+                                                <connections>
+                                                    <action selector="playScisscorTappedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="die-DI-ANp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59O-xp-cbH">
+                                        <rect key="frame" x="20" y="371.5" width="285" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                                        <state key="normal" title="Play Again">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playAgainTappedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oMt-yh-rSO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="59O-xp-cbH" secondAttribute="trailing" constant="20" id="3Du-un-uGf"/>
+                                    <constraint firstItem="VmG-S6-qF0" firstAttribute="leading" secondItem="4Id-nn-Ubd" secondAttribute="leading" id="7u2-ti-dAd"/>
+                                    <constraint firstItem="59O-xp-cbH" firstAttribute="leading" secondItem="4Id-nn-Ubd" secondAttribute="leading" constant="20" id="NoQ-Xb-etH"/>
+                                    <constraint firstAttribute="trailing" secondItem="VmG-S6-qF0" secondAttribute="trailing" id="b8Y-OF-fsM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="4Id-nn-Ubd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sLi-30-4w8"/>
+                            <constraint firstItem="4Id-nn-Ubd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v2w-DB-MYp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appSignLabel" destination="u2p-Xw-S4M" id="TeM-Ia-5Bp"/>
+                        <outlet property="playAgainButton" destination="59O-xp-cbH" id="chZ-Uk-wZs"/>
+                        <outlet property="playPaperButton" destination="LfU-p7-V2R" id="FqV-NS-jWc"/>
+                        <outlet property="playRockButton" destination="F5J-u6-fmH" id="oqx-Xf-htf"/>
+                        <outlet property="playScissorsButton" destination="11i-MC-zQ3" id="jbs-hr-tff"/>
+                        <outlet property="statusGameLabel" destination="Xc4-sy-Dhx" id="7gQ-YH-dfU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
